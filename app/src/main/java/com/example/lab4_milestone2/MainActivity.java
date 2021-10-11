@@ -96,12 +96,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateLocationInfo (Location location) {
-        Log.i("LocationInfo", location.toString());
+        Log.i("LocationInfo",location.toString());
 
-        TextView latTextView = (TextView) findViewById(R.id.latTextView);
-        TextView lonTextView = (TextView) findViewById(R.id.lonTextView);
-        TextView altTextView = (TextView) findViewById(R.id.altTextView);
-        TextView accTextView = (TextView) findViewById(R.id.accTextView);
+        TextView latTextView =  findViewById(R.id.latTextView);
+        TextView lonTextView =  findViewById(R.id.lonTextView);
+        TextView altTextView =  findViewById(R.id.altTextView);
+        TextView accTextView =  findViewById(R.id.accTextView);
         latTextView.setText("Latitude: " + location.getLatitude());
         lonTextView.setText("Longitude: " + location.getLatitude());
         altTextView.setText("Altitude: " + location.getAltitude());
