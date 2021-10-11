@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onLocationChanged(@NonNull Location location) {
                 updateLocationInfo(location);
             }
+            //commit edit
 
             @Override
             public void onStatusChanged(String s, int i, Bundle bundle) {
